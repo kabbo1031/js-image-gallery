@@ -1,0 +1,31 @@
+body{
+  background:#020617;
+  font-family:Arial;
+  padding:20px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(120px,1fr));
+  gap:10px;
+}
+
+img{
+  width:100%;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#viewer{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+#viewer img{
+  max-width:90%;
+  max-height:90%;
+}
