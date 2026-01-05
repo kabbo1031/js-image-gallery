@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://picsum.photos/200?1" onclick="view(this.src)">
+    <img src="https://picsum.photos/200?2" onclick="view(this.src)">
+    <img src="https://picsum.photos/200?3" onclick="view(this.src)">
+    <img src="https://picsum.photos/200?4" onclick="view(this.src)">
+  </div>
+
+  <div id="viewer" onclick="closeView()">
+    <img id="full">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
